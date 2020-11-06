@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Vue - primi passi</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+
+        <div id="root">
+
+            <input type="text" v-model="nome" :placeholder="placeholderNome">
+            <input type="text" v-model="cognome" :placeholder="placeholderCognome">
+
+            <h1 :class="mieClassi">Ciao {{ nome }} {{ cognome }}!!</h1>
+
+            <button @click="saluta">Cliccami</button>
+
+        </div>
+
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>
